@@ -1,25 +1,84 @@
 <!--
     This is basic google home page.
 -->
+<style>
+    #centre-img{
+        position: relative;
+        
+        left:815px;
+        top:250px;
+    }
+    #search-bar{
+        position: relative;
+        left:710px;
+        top:250px;
+    }
+    a {
+        color: gray;
+        text-decoration:none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .background{
+        background-color:rgb(241, 238, 238);
+
+    }
+    .bottom-text{
+        
+        position: relative;
+        
+        
+
+    }
+    .leftbox{
+        float:left;
+        width: 50%;
+        position: relative; top: 25%;
+        padding: 0px;
+        border-width: 0px;
+        
+    }
+    .rightbox{
+        float:right;
+        width: 50%;
+        text-align: right;
+        position: relative; top: 25%;
+        padding: 0px;
+        border-width: 0px;
+    }
+    .bottombox{
+        position: relative;
+        top: 625px;
+        padding: 0px;
+        border-width: 0px;
+        
+    }
+    .button{
+        position: relative;
+        top:280px;
+        left:775px;
+    }
+</style>
 <html>
     <head>
     </head>
     <body>
-        <div><a href="#">Gmail</a>
+        <div class="rightbox"><a href="#">Gmail</a>
             <a href="#">Images</a>
             <a href="#"><img src = "../images/apps.png" alt="Apps"></a>
         </div>
-        <div><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-        </div>
-        <div>
+        <div><img id="centre-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        
+        <div style="position: relative; top: 20px;">
             <form action="https://www.google.com/search">
                 <div>
-                    <input type="text">
+                    <input id="search-bar" type="text" style="width: 500px;">
                 </div>
-                <div>
-                    <button type="submit">Google Search</button>
+                <div >
+                    <button  class="button" type="submit">Google Search</button>
                     <form action="https://www.google.com/doodles">
-                        <button type="submit">I am feeling lucky</button>
+                        <button  class="button" type="submit">I am feeling lucky</button>
                     </form>
                     
                 </div>
@@ -27,21 +86,26 @@
             </form>
             
         </div>
-    <div>
-        <p>India</p>
     </div>
-    <div>
-        <div>
+    <div class="background bottombox">
+
+     <div class="background " style="color: gray; height: 40px;">
+       <p style="position: relative; top: 25%;"> India </p>
+     </div>
+     <hr color="lightgrey" size=1>
+     <div class="background" style="height: 40px;">
+        <div class="leftbox background">
             <a href="#">About</a>
             <a href="#">Advertising</a>
             <a href="#">Business</a>
             <a href="#">How Search works</a>
-        </div>
-        <div>
+        </div>  
+        <div class="rightbox background">
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
             <a href="#">Settings</a>
         </div>
+     </div>
     </div>
     </body>
 </html>
